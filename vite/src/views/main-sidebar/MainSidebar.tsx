@@ -56,6 +56,8 @@ export const MainSidebar = () => {
           `h-full bg-stone-100 py-4 flex flex-col justify-between transition-all duration-150`,
           expanded ? "min-w-[200px] max-w-[200px]" : "min-w-[50px] max-w-[50px]"
         )}
+        onMouseEnter={() => setExpanded(true)}
+        onMouseLeave={() => setExpanded(false)}
       >
         <div className="flex flex-col gap-6 relative">
           <Button
